@@ -17,18 +17,23 @@
                   </select>
             </div>
             
-            <div class="list" v-show="discsFiltered.length > 0">
+            <div class="list">
                 <ul class="flex">
-                    <li v-for="song in discsFiltered">
-                        <div class="card flex">
-                            <div class="cover">
-                                <img :src="song.poster">
-                            </div>
-                            <p class="disc_title"> <small>{{song.title}}</small></p>
-                            <p class="disc_author"> <small>{{song.author}}</small></p>
-                            <p class="disc_year"> <small>{{song.year}}</small></p>
-                        </div>
-                    </li>
+
+                <?php
+                    foreach ($discs as $disc) {?>
+                       <li>
+                                <div class="card flex">
+                                    <div class="cover">
+                                        <img src="<?php echo $disc['poster'];?>">
+                                    </div>
+                                    <p class="disc_title"> <small><?php echo $disc['title'];?></small></p>
+                                    <p class="disc_author"> <small><?php echo $disc['author'];?></small></p>
+                                    <p class="disc_year"> <small><?php echo $disc['year'];?></small></p>
+                                 </div>
+                               </li>
+                  <?php  }
+                ?>
                 </ul>
             </div>
         </div>

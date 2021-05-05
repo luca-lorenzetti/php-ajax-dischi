@@ -10,10 +10,10 @@ let app = new Vue({
     methods: {
         getListDisc(){
 
-            axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+            axios.get("http://localhost/php-ajax-dischi/api.php")
             .then( (response)=>{
-                this.discs = response.data.response;
-                
+                this.discs = response.data;
+             
                 this.discs.sort( (disc, disc2)=>{
                     return disc.year - disc2.year;
                 }); 
@@ -39,7 +39,7 @@ let app = new Vue({
   
         
     },
-    created(){
+    mounted(){
         this.getListDisc();
     },
    
