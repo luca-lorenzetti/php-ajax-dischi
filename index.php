@@ -16,7 +16,7 @@
                     <option v-for="genre in genres">{{genre}}</option>
                   </select>
             </div>
-
+            
             <div class="list" v-show="discsFiltered.length > 0">
                 <ul class="flex">
                     <li v-for="song in discsFiltered">
