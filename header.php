@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- My style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/app.css">
    <!-- Axios lib -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <title>Document</title>

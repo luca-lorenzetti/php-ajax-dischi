@@ -1,0 +1,14 @@
+
+ul{
+    list-style: none;
+}
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
+
+#root{
+    width: 100%;
+    flex-direction: column;
+}
